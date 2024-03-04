@@ -1,9 +1,9 @@
 import { GraphQLBoolean, GraphQLInputObjectType, GraphQLInt, GraphQLNonNull, GraphQLObjectType, GraphQLString } from "graphql";
-import { MemberTypeId } from "../../types/members.js";
-import { ProfileType } from "../../types/profile.js";
-import { TypePrisma } from "../../types/index.js";
-import { UUIDType } from "../../types/uuid.js";
-import { CreateProfileInputType, DeleteProfileInputType, UpdateProfileInputType } from "./profile.type.js";
+import { MemberTypeId } from "../types/members.js";
+import { ProfileType } from "../types/profile.js";
+import { TypePrisma } from "../types/index.js";
+import { UUIDType } from "../types/uuid.js";
+import { CreateProfileInputType, DeleteProfileInputType, UpdateProfileInputType } from "./input/profile.input.js";
 
 const profileInputFields = {
   isMale: { type: GraphQLBoolean },

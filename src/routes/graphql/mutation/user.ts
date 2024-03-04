@@ -1,8 +1,8 @@
 import { GraphQLFloat, GraphQLInputObjectType, GraphQLNonNull, GraphQLObjectType, GraphQLString } from "graphql";
-import { UserType } from "../../types/user.js";
-import { TypePrisma } from "../../types/index.js";
-import { CreateUserInputType, DeleteUserInputType, UpdateUserInputType, UserSubscriptionType } from "./user.type.js";
-import { UUIDType } from "../../types/uuid.js";
+import { UserType } from "../types/user.js";
+import { TypePrisma } from "../types/index.js";
+import { CreateUserInputType, DeleteUserInputType, UpdateUserInputType, UserSubscriptionType } from "./input/user.input.js";
+import { UUIDType } from "../types/uuid.js";
 
 const userInputFields = {
     name: { type: GraphQLString },

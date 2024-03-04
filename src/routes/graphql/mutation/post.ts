@@ -1,8 +1,8 @@
 import { GraphQLInputObjectType, GraphQLNonNull, GraphQLObjectType, GraphQLString } from "graphql";
-import { UUIDType } from "../../types/uuid.js";
-import { CreatePostInputType, DeletePostInputType, UpdatePostInputType } from "./post.type.js";
-import { TypePrisma } from "../../types/index.js";
-import { PostType } from "../../types/post.js";
+import { UUIDType } from "../types/uuid.js";
+import { CreatePostInputType, DeletePostInputType, UpdatePostInputType } from "./input/post.input.js";
+import { TypePrisma } from "../types/index.js";
+import { PostType } from "../types/post.js";
 
 const postInputFields = {
     authorId: { type: UUIDType },
