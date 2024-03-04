@@ -41,7 +41,7 @@ const deletePost = {
     },
 };
   
-export const PostMutation = {
+export const postMutation = {
   createPost,
   updatePost,
   deletePost,
